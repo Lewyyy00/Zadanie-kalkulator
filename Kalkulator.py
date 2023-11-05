@@ -16,7 +16,11 @@ if what_calculation == '1':
     print(suma)
 elif what_calculation == '2':
     what_numbers = input("Podaj proszę dwie liczby, które chcesz odjąć. Pamiętaj aby odizelić je przecinkiem:")
-    pass
+    Split_numbers = what_numbers.split(",")
+    First_number = float(Split_numbers[0])
+    Second_number = float(Split_numbers[1])
+    calculation = First_number - Second_number
+    print(calculation)
 elif what_calculation == '3':
     what_numbers = input("Podaj proszę dwie liczby, które chcesz pomnożyć. Pamiętaj aby odizelić je przecinkiem:")
     pass
