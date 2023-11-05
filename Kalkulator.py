@@ -6,15 +6,19 @@ while True:
         break
     print("Błedna cyfra, wybierz cyfrę od 1 do 4")
 if what_calculation == '1':
-    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć:")
-    pass
+    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć. Pamiętaj aby odizelić je przecinkiem:")
+    Split_numbers = what_numbers.split(",")
+    First_number = int(Split_numbers[0])
+    Second_number = int(Split_numbers[1])
+    calculation = First_number + Second_number
+    print(calculation)
 elif what_calculation == '2':
-    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć:")
+    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć. Pamiętaj aby odizelić je przecinkiem:")
     pass
 elif what_calculation == '3':
-    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć:")
+    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć. Pamiętaj aby odizelić je przecinkiem:")
     pass
 elif what_calculation == '4':
-    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć:")
+    what_numbers = input("Podaj proszę dwie liczby, które chcesz policzyć. Pamiętaj aby odizelić je przecinkiem:")
     pass
 
