@@ -1,4 +1,6 @@
-
+import logging
+logging.basicConfig(level=logging.INFO)  
+log = logging.getLogger('my_logger')
 print('Cześć i czołem, masz przed sobą najprostrzy kalkualtor na świecie.')
 while True:
     what_calculation = input("Typy obliczeń: \n 1.Dodawanie \n 2.Odejmowanie \n 3.Mnożenie \n 4.Dzielenie \n Wybierz proszę typ działania, który w tej chwili potrzebujesz:")
@@ -13,6 +15,9 @@ if what_calculation == '1':
     for i in range(How_many_numbers):
         number = int(Split_numbers[i])
         suma += number
+
+    logging.info(f"Dodajesz ze sobą liczby {i} ")
+    
     print(f"Twój wynik to {suma}")
 elif what_calculation == '2':
     what_numbers = input("Podaj proszę dwie liczby, które chcesz odjąć. Pamiętaj aby odzielić je przecinkiem:")
